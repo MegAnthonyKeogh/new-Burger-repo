@@ -1,0 +1,45 @@
+<div class="jumbotron">
+    <h1 class="display-4">Welcome to Burger and Cat Town</h1>
+    <p class="lead">We love burgers and we love cats, but we don't love cat-burgers!</p>
+    <hr class="my-4">
+    <base href="/">
+    <img src="/assets/images/catBurger.png" type"image/png">
+</div>
+
+<div class="container">
+    <div class="row">
+   <span><h1> Hot and Ready Burgers!</h1></span> 
+    </div>
+<ul>
+    {{#each data}}
+        {{#unless this.devoured}}
+             <li>{{this.name}}</li>
+             <button id="devour" data-id={{this.id}}>Devour</button>
+        {{/unless}}
+    {{/each}}
+</ul>
+</div>
+<div class="container">
+    <div class="row">
+   <span><h1> Already Enjoyed Burgers</h1></span> 
+    </div>
+<ul>
+    {{#each data}}
+        {{#if this.devoured}}
+             <li>{{this.name}}</li>
+            
+        {{/if}}
+    {{/each}}
+</ul>
+</div>
+
+
+
+<form>
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">Create your delicious burger here.</label>
+        <textarea class="form-control" id="name" rows="3"></textarea>
+
+    </div>
+    <button type="button" id="submit" class="btn btn-outline-primary btn-lg">Make a Burger</button>
+</form>
