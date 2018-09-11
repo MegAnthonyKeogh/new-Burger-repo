@@ -1,6 +1,6 @@
 # Burgertown
 
-[Try it here](https://tranquil-earth-46824.herokuapp.com/)
+[Try it here](https://murmuring-springs-22183.herokuapp.com/)
 
 
 This project uses mysql as the database, node.js as the server, and some JavaScript for the logic and functionality of the site. You can try the application in realtime on heroku using the link above. 
